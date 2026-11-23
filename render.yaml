@@ -1,0 +1,7 @@
+# Необязательно: Blueprint для Render. Можно создать сайт и вручную (см. README).
+services:
+  - type: web
+    name: stroydom-demo
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
